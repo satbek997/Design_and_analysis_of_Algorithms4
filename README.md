@@ -35,7 +35,7 @@ scc <file> → SCC detection + condensation + topological order.
 
 dagsp <file> <sourceCompId> → shortest and longest paths on the condensed DAG.
 
- Project Structure (15 %)
+ Project Structure 
 bash
 
 src/
