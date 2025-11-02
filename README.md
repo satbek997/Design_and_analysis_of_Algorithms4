@@ -6,7 +6,7 @@ All algorithms are implemented in pure Java 17 with reproducible metrics and dat
 
 ---
 
-##  Algorithmic Overview (55 %)
+##  Algorithmic Overview 
 
 ### 1.1 SCC (Tarjan)
 Detects cycles and groups mutually dependent tasks.  
