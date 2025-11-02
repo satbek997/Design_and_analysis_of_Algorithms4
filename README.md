@@ -149,7 +149,7 @@ For dense graphs, prefer edge-based weights and DP over topo order for efficienc
 
 All methods run in linear or near-linear time and scale well to 50 nodes (100+ edges).
 
- Code Quality & Tests (15 %)
+ Code Quality & Tests 
 Clean OOP structure by responsibility (SCC / Topo / DAG-SP).
 
 Javadoc comments on public classes and methods.
