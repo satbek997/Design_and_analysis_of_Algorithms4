@@ -50,7 +50,7 @@ public class App {
                 System.out.print("C" + i + (i < sccCount - 1 ? ", " : "]\n"));
             }
 
-            // 🔹 Порядок задач
+        
             System.out.print("Derived task order after compression: [");
             for (int i = 0; i < sccCount; i++) {
                 String name = file.startsWith("large") ? "X" : file.startsWith("medium") ? "M" : "V";
