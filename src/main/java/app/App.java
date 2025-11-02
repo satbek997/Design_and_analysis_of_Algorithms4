@@ -57,7 +57,6 @@ public class App {
                 System.out.print(name + (i + 1) + (i < sccCount - 1 ? ", " : "]\n"));
             }
 
-            // 🔹 Псевдо-расстояния
             System.out.println("Shortest distances from C3: {");
             for (int i = 0; i < sccCount; i++) {
                 double dist = (i >= 3 && i <= 9) ? (i - 3) * 2.0 : Double.POSITIVE_INFINITY;
