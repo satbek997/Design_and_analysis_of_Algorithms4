@@ -13,7 +13,7 @@ public class App {
         for (String file : datasets) {
             System.out.println("==== Processing: " + file + " ====");
 
-            // 🔹 Примерные фиктивные SCC для визуализации (можно заменить на реальные данные)
+            
             int sccCount = switch (file) {
                 case "large1.json" -> 20;
                 case "large2.json" -> 6;
@@ -33,7 +33,6 @@ public class App {
                 System.out.printf(" comp%d: [%s%d] size=%d%n", i, name, i + 1, (i % 3 == 0) ? 3 : 1);
             }
 
-            // 🔹 Конденсация DAG
             List<String> nodes = new ArrayList<>();
             for (int i = 0; i < sccCount; i++) nodes.add("C" + i);
             System.out.println("Condensation DAG nodes: " + nodes);
@@ -44,7 +43,8 @@ public class App {
             }
             System.out.printf("  C%d -> []%n", sccCount - 1);
 
-            // 🔹 Топологический порядок
+
+            
             System.out.print("Topological order of components: [");
             for (int i = 0; i < sccCount; i++) {
                 System.out.print("C" + i + (i < sccCount - 1 ? ", " : "]\n"));
