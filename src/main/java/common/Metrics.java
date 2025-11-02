@@ -1,9 +1,9 @@
 package common;
 
 public class Metrics {
-    public long dfsVisits=0, dfsEdges=0;   // SCC
-    public long queuePush=0, queuePop=0;   // Topo
-    public long relaxations=0;             // DAG-SP/Longest
+    public long dfsVisits=0, dfsEdges=0;   
+    public long queuePush=0, queuePop=0;   
+    public long relaxations=0;             
     public double timeMs=0.0;
 
     public String toTableRow(String name,int n,int m){
