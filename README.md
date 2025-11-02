@@ -122,7 +122,7 @@ Results Summary
 
 
 
- Analysis (25 %)
+ Analysis 
 Observations
 SCC decomposition reduces complex cyclic graphs to much smaller DAGs, greatly simplifying scheduling.
 
