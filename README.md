@@ -158,7 +158,7 @@ JUnit tests cover edge cases (single node, pure cycle, DAG).
 
 Metrics class centralizes instrumentation for comparative analysis.
 
- Repo Hygiene (5 %)
+ Repo Hygiene 
 Project builds from a clean clone:
 
 bash
