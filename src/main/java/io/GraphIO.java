@@ -11,7 +11,7 @@ public class GraphIO {
         public Graph g;
         public Map<String,Integer> idByName = new HashMap<>();
         public java.util.List<String> names = new ArrayList<>();
-        public Integer sourceCompMaybe = null; // опционально
+        public Integer sourceCompMaybe = null; 
     }
 
     public static Loaded loadJson(String path) throws IOException {
@@ -19,7 +19,6 @@ public class GraphIO {
         JsonObject root = JsonParser.parseString(text).getAsJsonObject();
         Loaded L = new Loaded();
 
-        // Вариант 1: nodes/from
         if (root.has("nodes")) {
             var namesArr = root.getAsJsonArray("nodes");
             for (int i=0;i<namesArr.size();i++){
@@ -38,7 +37,6 @@ public class GraphIO {
             return L;
         }
 
-        // Вариант 2: n/u/v
         if (root.has("n")) {
             int n = root.get("n").getAsInt();
             Graph g = new Graph(n);
